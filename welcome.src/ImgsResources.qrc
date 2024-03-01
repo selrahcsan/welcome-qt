@@ -1,0 +1,93 @@
+<RCC>
+    <qresource prefix="/Imgs/Avatars">
+        <file>Imgs/avatars/avatar.jpg</file>
+    </qresource>
+    <qresource prefix="/Imgs/Browsers">
+        <file>Imgs/Browsers/brave-browser.svg</file>
+        <file>Imgs/Browsers/brave.png</file>
+        <file>Imgs/Browsers/chrome.png</file>
+        <file>Imgs/Browsers/edge.png</file>
+        <file>Imgs/Browsers/google-chrome.svg</file>
+        <file>Imgs/Browsers/microsoft-edge.svg</file>
+        <file>Imgs/Browsers/opera.png</file>
+        <file>Imgs/Browsers/opera.svg</file>
+        <file>Imgs/Browsers/tor.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/DesktopThemesColors">
+        <file>Imgs/DesktopThemesColors/DesktopDark-1.png</file>
+        <file>Imgs/DesktopThemesColors/DesktopDark.png</file>
+        <file>Imgs/DesktopThemesColors/DesktopLight-1.png</file>
+        <file>Imgs/DesktopThemesColors/DesktopLight.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/IconesThemeColors">
+        <file>Imgs/IconsThemeColors/dolphin.png</file>
+        <file>Imgs/IconsThemeColors/folder-add.png</file>
+        <file>Imgs/IconsThemeColors/folder-bookmarks.png</file>
+        <file>Imgs/IconsThemeColors/folder-cyan.png</file>
+        <file>Imgs/IconsThemeColors/folder-documents.png</file>
+        <file>Imgs/IconsThemeColors/folder.png</file>
+        <file>Imgs/IconsThemeColors/thunarGreen.png</file>
+        <file>Imgs/IconsThemeColors/thunarOrange.png</file>
+        <file>Imgs/IconsThemeColors/thunarPink.png</file>
+        <file>Imgs/IconsThemeColors/thunarPurple.png</file>
+        <file>Imgs/IconsThemeColors/thunarRed.png</file>
+        <file>Imgs/IconsThemeColors/thunarYellow.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/Logos">
+        <file>Imgs/Logos/logo.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/Office">
+        <file>Imgs/Office/asc-de1.svg</file>
+        <file>Imgs/Office/g30.png</file>
+        <file>Imgs/Office/g42.png</file>
+        <file>Imgs/Office/g735.png</file>
+        <file>Imgs/Office/g825.png</file>
+        <file>Imgs/Office/google-docs.svg</file>
+        <file>Imgs/Office/libreoffice-main.svg</file>
+        <file>Imgs/Office/microsoft-365.svg</file>
+        <file>Imgs/Office/wps-office-wpsmain.svg</file>
+    </qresource>
+    <qresource prefix="/Imgs/Sobre">
+        <file>Imgs/sobre/tiger-os-banner_bkp.png</file>
+        <file>Imgs/sobre/tiger-os-banner-50-percent.png</file>
+        <file>Imgs/sobre/tiger-os-banner.png</file>
+    </qresource>
+    <qresource prefix="/Imgs/WebApps">
+        <file>Imgs/WebApps/306088545_3403528589884150_5241075125283309856_n.jpg</file>
+        <file>Imgs/WebApps/1656733637logo-canva-png.webp</file>
+        <file>Imgs/WebApps/canva.png</file>
+        <file>Imgs/WebApps/chrome-google-keep.svg</file>
+        <file>Imgs/WebApps/codepen.png</file>
+        <file>Imgs/WebApps/cvyou.png</file>
+        <file>Imgs/WebApps/diagrams.png</file>
+        <file>Imgs/WebApps/docs.png</file>
+        <file>Imgs/WebApps/edge.png</file>
+        <file>Imgs/WebApps/excel.png</file>
+        <file>Imgs/WebApps/FELIPI CESAR DOS SANTOS NEUMANN 29_12_2023 ás 17 55 51.pdf</file>
+        <file>Imgs/WebApps/gAgenda.png</file>
+        <file>Imgs/WebApps/gcalendar.png</file>
+        <file>Imgs/WebApps/gcontacts.png</file>
+        <file>Imgs/WebApps/gforms.png</file>
+        <file>Imgs/WebApps/gist.png</file>
+        <file>Imgs/WebApps/github.png</file>
+        <file>Imgs/WebApps/github.svg</file>
+        <file>Imgs/WebApps/github.xcf</file>
+        <file>Imgs/WebApps/gkeep.png</file>
+        <file>Imgs/WebApps/glitch.png</file>
+        <file>Imgs/WebApps/gmeet.png</file>
+        <file>Imgs/WebApps/google-agenda.svg</file>
+        <file>Imgs/WebApps/google-forms.svg</file>
+        <file>Imgs/WebApps/google-meet.svg</file>
+        <file>Imgs/WebApps/keep.png</file>
+        <file>Imgs/WebApps/logomaker.png</file>
+        <file>Imgs/WebApps/medium.png</file>
+        <file>Imgs/WebApps/photopea.png</file>
+        <file>Imgs/WebApps/photoshop.png</file>
+        <file>Imgs/WebApps/powerpoint.png</file>
+        <file>Imgs/WebApps/sheets.png</file>
+        <file>Imgs/WebApps/slides.png</file>
+        <file>Imgs/WebApps/spark.png</file>
+        <file>Imgs/WebApps/welcome-studio.png</file>
+        <file>Imgs/WebApps/word.png</file>
+    </qresource>
+</RCC>
