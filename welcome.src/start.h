@@ -11,7 +11,6 @@
 #include <QWidget>
 #include <QProcess>
 #include <QString>
-#include <QString>
 #include <QPushButton>
 #include <QMessageBox>
 #include <QLocale>

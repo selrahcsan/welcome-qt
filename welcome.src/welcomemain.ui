@@ -273,7 +273,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_20">
+          <widget class="QPushButton" name="pushButton_Orange">
            <property name="icon">
             <iconset resource="ImgsResources.qrc">
              <normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder.png</normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder.png</iconset>
@@ -303,7 +303,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_15">
+          <widget class="QPushButton" name="pushButton_Brown">
            <property name="text">
             <string/>
            </property>

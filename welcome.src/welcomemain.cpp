@@ -15,17 +15,38 @@ WelcomeMain::WelcomeMain(QWidget *parent)
 //Elements BackEnds
 
 void WelcomeMain::check_Themes_Mode(){
-    checkTheme c;
-    QString s  = c.getTheme();
-    if (s == "light"){
-        ui->pushButton_ModeDark->setFlat(true);
-        ui->pushButton_ModeLight->setFlat(false);
+    checkTheme theme;
+    QString LIGHT_THEME = "light";
+    QString DARK_THEME = "dark";
+
+    QString currentTheme = theme.getTheme();
+
+    ui->pushButton_ModeDark->setFlat(currentTheme == LIGHT_THEME);
+    ui->pushButton_ModeLight->setFlat(currentTheme == DARK_THEME);
+
+    // if (theme.getTheme() == "light"){
+    //     ui->pushButton_ModeDark->setFlat(true);
+    //     ui->pushButton_ModeLight->setFlat(false);
+    // }
+    // else
+    // {
+    //     ui->pushButton_ModeLight->setFlat(true);
+    //     ui->pushButton_ModeDark->setFlat(false);
+    // }
+
+
+}
+
+void WelcomeMain::check_Colors_Mode(){
+    checkTheme color;
+    if (color.getIcon() == "orange"){
+        ui->pushButton_Orange->setFlat(false);
+        ui->pushButton_Brown->setFlat(true);
     }
-    else
-    {
-        ui->pushButton_ModeLight->setFlat(true);
-        ui->pushButton_ModeDark->setFlat(false);
+    else if (color.getIcon() == "brown"){
+
     }
+
 }
 
 void WelcomeMain::on_listWidget_Categories_currentRowChanged(int currentRow)
@@ -208,8 +229,6 @@ void WelcomeMain::on_pushButton_Drivers_clicked()
     //"DISPLAY=$DISPLAY" << "XAUTHORITY=$XAUTHORITY"
     process.waitForFinished();
 
-
-
 }
 
 void WelcomeMain::on_pushButton_Update_System_clicked()
@@ -252,6 +271,32 @@ void WelcomeMain::on_pushButton_Codecs_clicked()
     apps actionApp;
     actionApp.installDeb("wrapper-codecs", "tarefasAdicionais");
 }
+
+void WelcomeMain::on_pushButton_ModeLight_clicked()
+{
+    checkTheme themes;
+    std::string color = themes.getIcon().toStdString();
+    themes.setTheme(color,"Light");
+    check_Themes_Mode();
+}
+
+
+void WelcomeMain::on_pushButton_ModeDark_clicked()
+{
+    checkTheme themes;
+    std::string color = themes.getIcon().toStdString();
+    themes.setTheme(color,"Light");
+    check_Themes_Mode();
+}
+
+
+void WelcomeMain::on_pushButton_Orange_clicked()
+{
+    checkTheme themes;
+    std::string mode = themes.getTheme().toStdString();
+    themes.setTheme("Orange", mode);
+}
+
 
 // Elements Office Page
 
@@ -559,17 +604,4 @@ void WelcomeMain::on_pushButton_Google_clicked()
 
 }
 
-
-void WelcomeMain::on_pushButton_ModeLight_clicked()
-{
-    ui->pushButton_ModeDark->setFlat(true);
-    ui->pushButton_ModeLight->setFlat(false);
-}
-
-
-void WelcomeMain::on_pushButton_ModeDark_clicked()
-{
-    ui->pushButton_ModeLight->setFlat(true);
-    ui->pushButton_ModeDark->setFlat(false);
-}
 

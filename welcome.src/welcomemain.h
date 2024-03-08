@@ -23,7 +23,7 @@ private slots:
 
     //Elements BackEnds
     void check_Themes_Mode();
-
+    void check_Colors_Mode();
     void check_Buttons_Texts(std::string appName, QPushButton *button, std::string modeApp);
     void check_All_buttons();
     void check_Button_remmina();
@@ -112,6 +112,8 @@ private slots:
     void on_pushButton_ModeLight_clicked();
 
     void on_pushButton_ModeDark_clicked();
+
+    void on_pushButton_Orange_clicked();
 
 private:
     Ui::WelcomeMain *ui;
