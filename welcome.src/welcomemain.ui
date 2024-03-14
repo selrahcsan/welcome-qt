@@ -32,8 +32,8 @@
    <string>Boas Vindas ao TigerOS</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>:/Imgs/Logos/Imgs/Logos/Logo TigerOS.png</normaloff>:/Imgs/Logos/Imgs/Logos/Logo TigerOS.png</iconset>
+   <iconset resource="ImgsResources.qrc">
+    <normaloff>:/Imgs/Logos/Imgs/Logos/logo.png</normaloff>:/Imgs/Logos/Imgs/Logos/logo.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget_Pages">
@@ -318,7 +318,7 @@
             </size>
            </property>
            <property name="flat">
-            <bool>false</bool>
+            <bool>true</bool>
            </property>
           </widget>
          </item>
@@ -348,7 +348,7 @@
             </size>
            </property>
            <property name="flat">
-            <bool>false</bool>
+            <bool>true</bool>
            </property>
           </widget>
          </item>
@@ -378,7 +378,7 @@
             </size>
            </property>
            <property name="flat">
-            <bool>false</bool>
+            <bool>true</bool>
            </property>
           </widget>
          </item>
@@ -408,7 +408,7 @@
             </size>
            </property>
            <property name="flat">
-            <bool>false</bool>
+            <bool>true</bool>
            </property>
           </widget>
          </item>
