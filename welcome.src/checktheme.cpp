@@ -32,7 +32,6 @@ void checkTheme::setTheme(std::string color, std::string mode){
     mode[0] = toupper(mode[0]);
     color[0] = toupper(color[0]);
 
-
     QString cor = QString::fromUtf8(color.c_str());
     QString modo = QString::fromUtf8(mode.c_str());
 
@@ -45,6 +44,12 @@ void checkTheme::setTheme(std::string color, std::string mode){
     QProcess colorSchemeProcess;
     colorSchemeProcess.start("plasma-apply-colorscheme", QStringList() << fullName);
     colorSchemeProcess.waitForFinished();
+
+    QProcess iconColorProcess;
+    iconColorProcess.start("/usr/lib/x86_64-linux-gnu/libexec/plasma-changeicons", QStringList() << cor);
+    iconColorProcess.waitForFinished();
+
+    setColor();
 }
 
 QString checkTheme::getIcon(){
@@ -72,4 +77,22 @@ QString checkTheme::getIcon(){
             return "lavanda";
     }
     return "default";
+}
+
+void checkTheme::setColor(){
+    QString color = getIcon();
+    QString colorHex;
+    if (color == "orange")
+        colorHex = "'#f69310'";
+    else if (color == "brown")
+        colorHex = "'#aa4000'";
+    else if (color == "cyan")
+        colorHex = "'#00828c'";
+    else if (color == "lavanda")
+        colorHex = "'#6a58f'";
+
+    QProcess highlightColor;
+    highlightColor.start("plasma-apply-colorscheme", QStringList() << "accent-color" << colorHex );
+    highlightColor.waitForFinished();
+
 }

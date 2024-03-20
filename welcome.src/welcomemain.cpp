@@ -33,6 +33,7 @@ void WelcomeMain::check_Themes_Mode(){
         ui->pushButton_ModeLight->setFlat(true);
         ui->pushButton_ModeDark->setFlat(false);
     }
+    check_Colors_Mode();
 }
 
 void WelcomeMain::check_Colors_Mode(){
@@ -53,7 +54,6 @@ void WelcomeMain::check_Colors_Mode(){
     if(buttons.contains(currentIcon)) {
         buttons[currentIcon]->setFlat(false);
     }
-
 }
 
 void WelcomeMain::on_listWidget_Categories_currentRowChanged(int currentRow)
@@ -286,6 +286,7 @@ void WelcomeMain::on_pushButton_ModeLight_clicked()
     std::string color = themes.getIcon().toStdString();
     themes.setTheme(color,"Light");
     check_Themes_Mode();
+    check_Colors_Mode();
 }
 
 
@@ -293,8 +294,9 @@ void WelcomeMain::on_pushButton_ModeDark_clicked()
 {
     checkTheme themes;
     std::string color = themes.getIcon().toStdString();
-    themes.setTheme(color,"Light");
+    themes.setTheme(color,"Dark");
     check_Themes_Mode();
+    check_Colors_Mode();
 }
 
 
@@ -303,7 +305,10 @@ void WelcomeMain::on_pushButton_Orange_clicked()
     checkTheme themes;
     std::string mode = themes.getTheme().toStdString();
     themes.setTheme("Orange", mode);
+    check_Themes_Mode();
+    check_Colors_Mode();
 }
+
 
 
 // Elements Office Page

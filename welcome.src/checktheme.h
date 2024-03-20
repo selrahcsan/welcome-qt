@@ -13,6 +13,7 @@ public slots:
     void setTheme(std::string color, std::string mode);
     QString getIcon();
     void setIcon();
+    void setColor();
 };
 
 #endif // CHECKTHEME_H
