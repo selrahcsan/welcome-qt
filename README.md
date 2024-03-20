@@ -18,7 +18,7 @@ git clone https://github.com/Tiger-OperatingSystem/welcome-qt.git
 ## Build
 
 ```bash
-cd welcome-qt
+cd welcome-qt/welcome.src
 qmake6 welcome.pro
 make
 ```
