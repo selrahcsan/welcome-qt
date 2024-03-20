@@ -18,20 +18,27 @@ void WelcomeMain::check_Themes_Mode(){
     checkTheme theme;
     QString LIGHT_THEME = "light";
     QString DARK_THEME = "dark";
+    QString DEFAULT = "default";
 
     QString currentTheme = theme.getTheme();
 
     ui->pushButton_ModeDark->setFlat(currentTheme == LIGHT_THEME);
     ui->pushButton_ModeLight->setFlat(currentTheme == DARK_THEME);
+    ui->pushButton_ModeLight->setFlat(currentTheme == DEFAULT);
 
     if (theme.getTheme() == "light"){
         ui->pushButton_ModeDark->setFlat(true);
         ui->pushButton_ModeLight->setFlat(false);
     }
-    else
+    else if (theme.getTheme() == "dark")
     {
         ui->pushButton_ModeLight->setFlat(true);
         ui->pushButton_ModeDark->setFlat(false);
+    }
+    else
+    {
+        ui->pushButton_ModeDark->setFlat(true);
+        ui->pushButton_ModeLight->setFlat(false);
     }
 
 
@@ -42,10 +49,37 @@ void WelcomeMain::check_Colors_Mode(){
     if (color.getIcon() == "orange"){
         ui->pushButton_Orange->setFlat(false);
         ui->pushButton_Brown->setFlat(true);
+        ui->pushButton_Cyan->setFlat(true);
+        ui->pushButton_Lavanda->setFlat(true);
     }
     else if (color.getIcon() == "brown"){
-
+        ui->pushButton_Orange->setFlat(true);
+        ui->pushButton_Brown->setFlat(false);
+        ui->pushButton_Cyan->setFlat(true);
+        ui->pushButton_Lavanda->setFlat(true);
     }
+    else if (color.getIcon() == "cyan")
+    {
+        ui->pushButton_Orange->setFlat(true);
+        ui->pushButton_Brown->setFlat(true);
+        ui->pushButton_Cyan->setFlat(false);
+        ui->pushButton_Lavanda->setFlat(true);
+    }
+    else if (color.getIcon() == "lavanda")
+    {
+        ui->pushButton_Orange->setFlat(true);
+        ui->pushButton_Brown->setFlat(true);
+        ui->pushButton_Cyan->setFlat(true);
+        ui->pushButton_Lavanda->setFlat(false);
+    }
+    else
+    {
+        ui->pushButton_Orange->setFlat(false);
+        ui->pushButton_Brown->setFlat(true);
+        ui->pushButton_Cyan->setFlat(true);
+        ui->pushButton_Lavanda->setFlat(true);
+    }
+
 
 }
 

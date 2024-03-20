@@ -62,14 +62,12 @@ QString checkTheme::getIcon(){
         QString themeName = currentIcon.first();
         if (themeName.contains("orange", Qt::CaseInsensitive))
             return "orange";
-        else if (themeName.contains("orange", Qt::CaseInsensitive))
+        else if (themeName.contains("brown", Qt::CaseInsensitive))
             return "brown";
-        else if (themeName.contains("orange", Qt::CaseInsensitive))
+        else if (themeName.contains("cyan", Qt::CaseInsensitive))
             return "cyan";
-        else if (themeName.contains("orange", Qt::CaseInsensitive))
+        else if (themeName.contains("lavanda", Qt::CaseInsensitive))
             return "lavanda";
-
     }
-    return "desconhecido";
-
+    return "default";
 }
