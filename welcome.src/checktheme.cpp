@@ -13,9 +13,19 @@ QString checkTheme::getTheme(){
     QStringList themes = output.split("\n", Qt::SkipEmptyParts);
     QStringList currentTheme = themes.filter("current", Qt::CaseInsensitive);
 
+    QString themeName = currentTheme.first();
+
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Temas");
+    msgBox.setText(themeName);
+    msgBox.setStandardButtons(QMessageBox::Yes);
+    msgBox.addButton(QMessageBox::No);
+    msgBox.setDefaultButton(QMessageBox::No);
+    msgBox.exec();
+
+
     if (!currentTheme.isEmpty())
     {
-        QString themeName = currentTheme.first();
         if (themeName.contains("light", Qt::CaseInsensitive))
             return "light";
         else if (themeName.contains("dark", Qt::CaseInsensitive))
@@ -55,11 +65,20 @@ QString checkTheme::getIcon(){
     QString output(data);
 
     QStringList icons = output.split("\n", Qt::SkipEmptyParts);
-    QStringList currentIcon = icons.filter("cores", Qt::CaseInsensitive);
+    QStringList currentIcon = icons.filter("atual", Qt::CaseInsensitive);
+
+    QString themeName = currentIcon.first();
+
+    QMessageBox msgBox;
+    msgBox.setWindowTitle("Icones");
+    msgBox.setText(themeName);
+    msgBox.setStandardButtons(QMessageBox::Yes);
+    msgBox.addButton(QMessageBox::No);
+    msgBox.setDefaultButton(QMessageBox::No);
+    msgBox.exec();
 
     if (!currentIcon.isEmpty())
     {
-        QString themeName = currentIcon.first();
         if (themeName.contains("orange", Qt::CaseInsensitive))
             return "orange";
         else if (themeName.contains("brown", Qt::CaseInsensitive))

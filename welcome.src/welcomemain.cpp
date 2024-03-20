@@ -72,15 +72,13 @@ void WelcomeMain::check_Colors_Mode(){
         ui->pushButton_Cyan->setFlat(true);
         ui->pushButton_Lavanda->setFlat(false);
     }
-    else
-    {
-        ui->pushButton_Orange->setFlat(false);
-        ui->pushButton_Brown->setFlat(true);
-        ui->pushButton_Cyan->setFlat(true);
-        ui->pushButton_Lavanda->setFlat(true);
-    }
-
-
+    // else
+    // {
+    //     ui->pushButton_Orange->setFlat(false);
+    //     ui->pushButton_Brown->setFlat(true);
+    //     ui->pushButton_Cyan->setFlat(true);
+    //     ui->pushButton_Lavanda->setFlat(true);
+    // }
 }
 
 void WelcomeMain::on_listWidget_Categories_currentRowChanged(int currentRow)
@@ -111,6 +109,7 @@ void WelcomeMain::check_Buttons_Texts(std::string appName, QPushButton *button, 
 
 void WelcomeMain::check_All_buttons(){
     check_Themes_Mode();
+    check_Colors_Mode();
     check_Button_remmina();
     check_Button_clamtk();
     check_Button_LibreOffice();
