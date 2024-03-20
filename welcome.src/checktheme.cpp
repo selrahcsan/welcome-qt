@@ -15,15 +15,6 @@ QString checkTheme::getTheme(){
 
     QString themeName = currentTheme.first();
 
-    QMessageBox msgBox;
-    msgBox.setWindowTitle("Temas");
-    msgBox.setText(themeName);
-    msgBox.setStandardButtons(QMessageBox::Yes);
-    msgBox.addButton(QMessageBox::No);
-    msgBox.setDefaultButton(QMessageBox::No);
-    msgBox.exec();
-
-
     if (!currentTheme.isEmpty())
     {
         if (themeName.contains("light", Qt::CaseInsensitive))
@@ -68,14 +59,6 @@ QString checkTheme::getIcon(){
     QStringList currentIcon = icons.filter("atual", Qt::CaseInsensitive);
 
     QString themeName = currentIcon.first();
-
-    QMessageBox msgBox;
-    msgBox.setWindowTitle("Icones");
-    msgBox.setText(themeName);
-    msgBox.setStandardButtons(QMessageBox::Yes);
-    msgBox.addButton(QMessageBox::No);
-    msgBox.setDefaultButton(QMessageBox::No);
-    msgBox.exec();
 
     if (!currentIcon.isEmpty())
     {

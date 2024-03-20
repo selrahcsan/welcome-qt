@@ -18,13 +18,11 @@ void WelcomeMain::check_Themes_Mode(){
     checkTheme theme;
     QString LIGHT_THEME = "light";
     QString DARK_THEME = "dark";
-    QString DEFAULT = "default";
 
     QString currentTheme = theme.getTheme();
 
     ui->pushButton_ModeDark->setFlat(currentTheme == LIGHT_THEME);
     ui->pushButton_ModeLight->setFlat(currentTheme == DARK_THEME);
-    ui->pushButton_ModeLight->setFlat(currentTheme == DEFAULT);
 
     if (theme.getTheme() == "light"){
         ui->pushButton_ModeDark->setFlat(true);
@@ -35,50 +33,27 @@ void WelcomeMain::check_Themes_Mode(){
         ui->pushButton_ModeLight->setFlat(true);
         ui->pushButton_ModeDark->setFlat(false);
     }
-    else
-    {
-        ui->pushButton_ModeDark->setFlat(true);
-        ui->pushButton_ModeLight->setFlat(false);
-    }
-
-
 }
 
 void WelcomeMain::check_Colors_Mode(){
     checkTheme color;
-    if (color.getIcon() == "orange"){
-        ui->pushButton_Orange->setFlat(false);
-        ui->pushButton_Brown->setFlat(true);
-        ui->pushButton_Cyan->setFlat(true);
-        ui->pushButton_Lavanda->setFlat(true);
+
+    QString currentIcon = color.getIcon();
+    QMap<QString, QPushButton*> buttons = {
+        {"orange", ui->pushButton_Orange},
+        {"brown", ui->pushButton_Brown},
+        {"cyan", ui->pushButton_Cyan},
+        {"lavanda", ui->pushButton_Lavanda}
+    };
+
+    for(auto &button : buttons) {
+        button->setFlat(true);
     }
-    else if (color.getIcon() == "brown"){
-        ui->pushButton_Orange->setFlat(true);
-        ui->pushButton_Brown->setFlat(false);
-        ui->pushButton_Cyan->setFlat(true);
-        ui->pushButton_Lavanda->setFlat(true);
+
+    if(buttons.contains(currentIcon)) {
+        buttons[currentIcon]->setFlat(false);
     }
-    else if (color.getIcon() == "cyan")
-    {
-        ui->pushButton_Orange->setFlat(true);
-        ui->pushButton_Brown->setFlat(true);
-        ui->pushButton_Cyan->setFlat(false);
-        ui->pushButton_Lavanda->setFlat(true);
-    }
-    else if (color.getIcon() == "lavanda")
-    {
-        ui->pushButton_Orange->setFlat(true);
-        ui->pushButton_Brown->setFlat(true);
-        ui->pushButton_Cyan->setFlat(true);
-        ui->pushButton_Lavanda->setFlat(false);
-    }
-    // else
-    // {
-    //     ui->pushButton_Orange->setFlat(false);
-    //     ui->pushButton_Brown->setFlat(true);
-    //     ui->pushButton_Cyan->setFlat(true);
-    //     ui->pushButton_Lavanda->setFlat(true);
-    // }
+
 }
 
 void WelcomeMain::on_listWidget_Categories_currentRowChanged(int currentRow)

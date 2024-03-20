@@ -14,6 +14,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QLocale>
+#include <QMap>
 #include <iostream>
 #include <cstdlib>
 #include <sys/wait.h>
