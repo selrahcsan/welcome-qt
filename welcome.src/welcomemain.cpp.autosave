@@ -18,17 +18,19 @@ void WelcomeMain::check_Themes_Mode(){
     checkTheme theme;
     QString LIGHT_THEME = "light";
     QString DARK_THEME = "dark";
+    QString DEFAULT = "default";
 
     QString currentTheme = theme.getTheme();
 
     ui->pushButton_ModeDark->setFlat(currentTheme == LIGHT_THEME);
     ui->pushButton_ModeLight->setFlat(currentTheme == DARK_THEME);
+    ui->pushButton_ModeLight->setFlat(currentTheme == DEFAULT);
 
     if (theme.getTheme() == "light"){
         ui->pushButton_ModeDark->setFlat(true);
         ui->pushButton_ModeLight->setFlat(false);
     }
-    else
+    else if (theme.)
     {
         ui->pushButton_ModeLight->setFlat(true);
         ui->pushButton_ModeDark->setFlat(false);

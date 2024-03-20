@@ -18,10 +18,12 @@ QString checkTheme::getTheme(){
         QString themeName = currentTheme.first();
         if (themeName.contains("light", Qt::CaseInsensitive))
             return "light";
-        else
+        else if (themeName.contains("dark", Qt::CaseInsensitive))
             return "dark";
+        else if (themeName.contains("default", Qt::CaseInsensitive))
+            return "default";
     }
-    return "desconhecido";
+    return "light";
 }
 
 void checkTheme::setTheme(std::string color, std::string mode){
