@@ -336,37 +336,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_18">
-           <property name="icon">
-            <iconset resource="ImgsResources.qrc">
-             <normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-add.png</normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-add.png</iconset>
-           </property>
-           <property name="iconSize">
-            <size>
-             <width>50</width>
-             <height>50</height>
-            </size>
-           </property>
-           <property name="flat">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_49">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_17">
+          <widget class="QPushButton" name="pushButton_Cyan">
            <property name="icon">
             <iconset resource="ImgsResources.qrc">
              <normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-cyan.png</normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-cyan.png</iconset>
@@ -396,7 +366,7 @@
           </spacer>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton_16">
+          <widget class="QPushButton" name="pushButton_Lavanda">
            <property name="icon">
             <iconset resource="ImgsResources.qrc">
              <normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-bookmarks.png</normaloff>:/Imgs/IconesThemeColors/Imgs/IconsThemeColors/folder-bookmarks.png</iconset>
