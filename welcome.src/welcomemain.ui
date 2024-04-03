@@ -29,7 +29,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Boas Vindas ao TigerOS</string>
+   <string>Boas-Vindas ao TigerOS</string>
   </property>
   <property name="windowIcon">
    <iconset resource="ImgsResources.qrc">
@@ -2813,12 +2813,12 @@
     </item>
     <item>
      <property name="text">
-      <string>WebApps</string>
-     </property>
-     <property name="flags">
-      <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
-     </property>
-    </item>
+#      <string>WebApps</string>
+#    </property>
+#    <property name="flags">
+#     <set>ItemIsSelectable|ItemIsDragEnabled|ItemIsUserCheckable</set>
+#    </property>
+#   </item>
     <item>
      <property name="text">
       <string>Sobre</string>
