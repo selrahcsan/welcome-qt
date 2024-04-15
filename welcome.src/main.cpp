@@ -1,11 +1,11 @@
-#include "welcomemain.h"
+#include "Welcome.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    WelcomeMain w;
+    Welcome w;
     w.show();
     return a.exec();
 }
