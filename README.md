@@ -19,12 +19,12 @@ git clone https://github.com/Tiger-OperatingSystem/welcome-qt.git
 
 ```bash
 cd welcome-qt/welcome.src
-qmake6 welcome.pro
+qmake6 welcome-next.pro
 make
 ```
 
 ## Executando
 
 ```bash
-./welcome
+./welcome-next
 ```
