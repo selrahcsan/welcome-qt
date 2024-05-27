@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Scripts/debian-package.sh</file>
+        <file>Scripts/googledocs.sh</file>
+        <file>Scripts/office365.sh</file>
+    </qresource>
+</RCC>
