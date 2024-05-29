@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Boas vindas!</string>
+   <string>Boas-vindas!</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -129,7 +129,7 @@ QListView::item{
          </item>
          <item>
           <property name="text">
-           <string>Curso do Tiger OS</string>
+           <string>Tutoriais</string>
           </property>
           <property name="icon">
            <iconset theme="applications-education">
